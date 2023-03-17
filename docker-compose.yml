@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  node:
+    build: .
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/app
+      - /app/node_modules/
